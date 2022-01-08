@@ -26,6 +26,7 @@ section {
     border-radius: 10px;
     .card-img {
       position: relative;
+      //   height:150px; //adjustment to image gap in card header bg
       img:nth-of-type(1) {
         height: 100%;
         width: 100%;
