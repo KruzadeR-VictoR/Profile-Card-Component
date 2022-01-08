@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+section {
+  min-height: 100vh;
+  min-width: 100vw;
+  background: url(./images/bg-pattern-top.svg) left -550px top -550px no-repeat, url(./images/bg-pattern-bottom.svg) right -550px bottom -550px no-repeat;
+  background-color: #19a2ae;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .main-card {
+  border-radius: 10px;
+}
+
+section .main-card .card-img {
+  position: relative;
+}
+
+section .main-card .card-img img:nth-of-type(1) {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+section .main-card .card-img img:nth-of-type(2) {
+  position: absolute;
+  bottom: -70%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+section .main-card .details {
+  background-color: white;
+  padding: 2rem 0 0;
+  border-radius: 0 0 10px 10px;
+}
+
+section .main-card .details .name {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+section .main-card .details .name span {
+  font-size: 18px;
+  color: #6a6f81;
+  padding-left: 0.2rem;
+}
+
+section .main-card .details .location {
+  text-align: center;
+  color: #6a6f81;
+  padding: 0.5rem 0 2rem;
+}
+
+section .main-card .details .divider-line {
+  height: 3px;
+  background-color: #969696;
+  opacity: 0.1;
+}
+
+section .main-card .details .stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem 0.5rem;
+  font-weight: bolder;
+}
+
+section .main-card .details .stats .followers,
+section .main-card .details .stats .likes,
+section .main-card .details .stats .photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+section .main-card .details .stats h2 {
+  color: #2d3248;
+}
+
+section .main-card .details .stats p {
+  padding-top: 0.5rem;
+  font-size: 0.6rem;
+  color: #6a6f81;
+  letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 600px) {
+  .main-card {
+    width: 80% !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
