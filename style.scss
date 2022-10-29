@@ -13,7 +13,7 @@ $Darkgray: hsl(0, 0%, 59%);
   box-sizing: border-box;
   font-family: $kumbh_sans;
 }
-section {
+main {
   min-height: 100vh;
   min-width: 100vw;
   background: url(./images/bg-pattern-top.svg) left -550px top -550px no-repeat,
@@ -79,7 +79,8 @@ section {
           align-items: center;
           flex-flow: column;
         }
-        h2 {
+        h1 {
+          font-size: 1.17em;
           color: $Verydarkblue;
         }
         p {
